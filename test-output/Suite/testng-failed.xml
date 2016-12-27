@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="str" value="string"/>
+  <parameter name="character" value="b"/>
+  <test name="Test(failed)">
+    <parameter name="str" value="string"/>
+    <parameter name="character" value="b"/>
+    <classes>
+      <class name="com.ssf.SuiteOne.SuitBaseClass">
+        <methods>
+          <include name="TestLaunchBrowser"/>
+          <include name="set_Values" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ssf.SuiteOne.SuitBaseClass -->
+      <class name="com.ssf.SuiteOne.Testcase_001">
+        <methods>
+          <include name="TestSetupSuite"/>
+          <include name="TestLaunchApp"/>
+          <include name="TestAfterMethod1"/>
+          <include name="TestAfterMethod2"/>
+          <include name="TestMethod1"/>
+          <include name="TestTearupSuite"/>
+          <include name="TestSetupConfig"/>
+          <include name="TestTearupConfig"/>
+          <include name="TestCloseApp"/>
+          <include name="TestMethod2"/>
+        </methods>
+      </class> <!-- com.ssf.SuiteOne.Testcase_001 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

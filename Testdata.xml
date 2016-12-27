@@ -1,0 +1,20 @@
+<properties>
+	<redbus>
+		<URL>https://www.redbus.in/</URL>
+		<Browser>Firefox</Browser>
+		<Credentials>
+			<Username></Username>
+			<password></password>
+		</Credentials>
+	</redbus>
+	<BladeServer>
+	<URL>https://15.213.117.249/</URL>
+	<Browser>Firefox</Browser>
+	<Credentials>
+			<Username>Administrator</Username>
+			<password>12iso*help</password>
+		</Credentials>
+	</BladeServer>
+
+
+</properties>
