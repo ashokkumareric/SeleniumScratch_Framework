@@ -7,6 +7,11 @@ package com.ssf.property;
  */
 public class Selenium_TestData_Files {
 
+	public String from_text = "ahmedabad";
+	public String to_text = "bangalore";
+	public String from_date = "01-Jun-2017";
+	public String to_date = "05-Jan-2017";
+	
 	public String[] getdata_redbus(){
 		
 		String[] Credentials = {"Administrator", "12iso*help"};
@@ -14,6 +19,7 @@ public class Selenium_TestData_Files {
 		String URL = "https://www.redbus.in/";
 		String Browser = "firefox";
 		String[] testdata = new String[4];
+		
 		
 		testdata[0] = URL;
 		testdata[1] = Browser;

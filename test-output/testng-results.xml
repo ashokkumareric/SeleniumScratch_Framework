@@ -1,106 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="43348" started-at="2016-12-14T12:56:15Z" finished-at="2016-12-14T12:56:58Z">
+  <suite name="Default suite" duration-ms="37280" started-at="2016-12-31T08:08:22Z" finished-at="2016-12-31T08:08:59Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="43348" started-at="2016-12-14T12:56:15Z" finished-at="2016-12-14T12:56:58Z">
-      <class name="com.ssf.SuiteOne.Testcase_001">
-        <test-method status="PASS" signature="TestSetupSuite()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestSetupSuite" is-config="true" duration-ms="13" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
+    <test name="Default test" duration-ms="37280" started-at="2016-12-31T08:08:22Z" finished-at="2016-12-31T08:08:59Z">
+      <class name="in.redbus.Testsuites.SuiteBaseClass">
+        <test-method status="PASS" signature="Test_LauchBrowser()[pri:0, instance:in.redbus.Testsuites.SuiteBaseClass@3e6fa38a]" name="Test_LauchBrowser" is-config="true" duration-ms="32229" started-at="2016-12-31T13:38:22Z" finished-at="2016-12-31T13:38:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestSetupSuite -->
-        <test-method status="PASS" signature="TestLaunchApp()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestLaunchApp" is-config="true" duration-ms="0" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
+        </test-method> <!-- Test_LauchBrowser -->
+        <test-method status="PASS" signature="Test_SetDates()[pri:0, instance:in.redbus.Testsuites.SuiteBaseClass@3e6fa38a]" name="Test_SetDates" duration-ms="5021" started-at="2016-12-31T13:38:54Z" finished-at="2016-12-31T13:38:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestLaunchApp -->
-        <test-method status="PASS" signature="TestSetupConfig()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestSetupConfig" is-config="true" duration-ms="0" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestSetupConfig -->
-        <test-method status="PASS" signature="TestMethod1()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestMethod1" is-config="true" duration-ms="0" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod1 -->
-        <test-method status="PASS" signature="TestDryrun1(java.lang.String, java.lang.String)[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestDryrun1" duration-ms="11" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[b]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[string]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestDryrun1 -->
-        <test-method status="PASS" signature="TestMethod2()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestMethod2" is-config="true" duration-ms="0" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod2 -->
-        <test-method status="PASS" signature="TestAfterMethod1()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestAfterMethod1" is-config="true" duration-ms="1" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestAfterMethod1 -->
-        <test-method status="PASS" signature="TestAfterMethod2()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestAfterMethod2" is-config="true" duration-ms="0" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestAfterMethod2 -->
-        <test-method status="PASS" signature="TestMethod1()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestMethod1" is-config="true" duration-ms="0" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod1 -->
-        <test-method status="PASS" signature="TestMethod2()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestMethod2" is-config="true" duration-ms="1" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestMethod2 -->
-        <test-method status="PASS" signature="TestDryrun2()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestDryrun2" duration-ms="3" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestDryrun2 -->
-        <test-method status="PASS" signature="TestAfterMethod1()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestAfterMethod1" is-config="true" duration-ms="0" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestAfterMethod1 -->
-        <test-method status="PASS" signature="TestAfterMethod2()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestAfterMethod2" is-config="true" duration-ms="1" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestAfterMethod2 -->
-        <test-method status="PASS" signature="TestTearupConfig()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestTearupConfig" is-config="true" duration-ms="0" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestTearupConfig -->
-        <test-method status="PASS" signature="TestCloseApp()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestCloseApp" is-config="true" duration-ms="0" started-at="2016-12-14T18:26:58Z" finished-at="2016-12-14T18:26:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCloseApp -->
-        <test-method status="PASS" signature="TestTearupSuite()[pri:0, instance:com.ssf.SuiteOne.Testcase_001@7d9d1a19]" name="TestTearupSuite" is-config="true" duration-ms="1" started-at="2016-12-14T18:26:58Z" finished-at="2016-12-14T18:26:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestTearupSuite -->
-      </class> <!-- com.ssf.SuiteOne.Testcase_001 -->
-      <class name="com.ssf.SuiteOne.SuitBaseClass">
-        <test-method status="PASS" signature="TestLaunchBrowser()[pri:0, instance:com.ssf.SuiteOne.SuitBaseClass@39c0f4a]" name="TestLaunchBrowser" duration-ms="40549" started-at="2016-12-14T18:26:15Z" finished-at="2016-12-14T18:26:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestLaunchBrowser -->
-        <test-method status="PASS" signature="set_Values(java.lang.String)[pri:0, instance:com.ssf.SuiteOne.SuitBaseClass@39c0f4a]" name="set_Values" duration-ms="2741" started-at="2016-12-14T18:26:55Z" finished-at="2016-12-14T18:26:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- set_Values -->
-      </class> <!-- com.ssf.SuiteOne.SuitBaseClass -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- Test_SetDates -->
+      </class> <!-- in.redbus.Testsuites.SuiteBaseClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

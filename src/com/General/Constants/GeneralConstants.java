@@ -17,4 +17,5 @@ package com.General.Constants;
  */
 public interface GeneralConstants {
 
+	
 }

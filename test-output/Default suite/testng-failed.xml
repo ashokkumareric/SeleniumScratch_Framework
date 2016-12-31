@@ -3,26 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ssf.SuiteOne.SuitBaseClass">
+      <class name="in.redbus.Testsuites.SuiteBaseClass">
         <methods>
-          <include name="set_Values"/>
+          <include name="Test_LauchBrowser"/>
+          <include name="Test_SetDates"/>
         </methods>
-      </class> <!-- com.ssf.SuiteOne.SuitBaseClass -->
-      <class name="com.ssf.SuiteOne.Testcase_001">
-        <methods>
-          <include name="TestSetupSuite"/>
-          <include name="TestDryrun1"/>
-          <include name="TestLaunchApp"/>
-          <include name="TestAfterMethod1"/>
-          <include name="TestAfterMethod2"/>
-          <include name="TestMethod1"/>
-          <include name="TestTearupSuite"/>
-          <include name="TestSetupConfig"/>
-          <include name="TestTearupConfig"/>
-          <include name="TestCloseApp"/>
-          <include name="TestMethod2"/>
-        </methods>
-      </class> <!-- com.ssf.SuiteOne.Testcase_001 -->
+      </class> <!-- in.redbus.Testsuites.SuiteBaseClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
