@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37280" started-at="2016-12-31T08:08:22Z" finished-at="2016-12-31T08:08:59Z">
+  <suite name="Default suite" duration-ms="34125" started-at="2017-01-01T16:39:28Z" finished-at="2017-01-01T16:40:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37280" started-at="2016-12-31T08:08:22Z" finished-at="2016-12-31T08:08:59Z">
+    <test name="Default test" duration-ms="34125" started-at="2017-01-01T16:39:28Z" finished-at="2017-01-01T16:40:02Z">
       <class name="in.redbus.Testsuites.SuiteBaseClass">
-        <test-method status="PASS" signature="Test_LauchBrowser()[pri:0, instance:in.redbus.Testsuites.SuiteBaseClass@3e6fa38a]" name="Test_LauchBrowser" is-config="true" duration-ms="32229" started-at="2016-12-31T13:38:22Z" finished-at="2016-12-31T13:38:54Z">
+        <test-method status="PASS" signature="Test_LauchBrowser()[pri:0, instance:in.redbus.Testsuites.SuiteBaseClass@3e6fa38a]" name="Test_LauchBrowser" is-config="true" duration-ms="27149" started-at="2017-01-01T22:09:28Z" finished-at="2017-01-01T22:09:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_LauchBrowser -->
-        <test-method status="PASS" signature="Test_SetDates()[pri:0, instance:in.redbus.Testsuites.SuiteBaseClass@3e6fa38a]" name="Test_SetDates" duration-ms="5021" started-at="2016-12-31T13:38:54Z" finished-at="2016-12-31T13:38:59Z">
+        <test-method status="PASS" signature="Test_SetDates()[pri:0, instance:in.redbus.Testsuites.SuiteBaseClass@3e6fa38a]" name="Test_SetDates" duration-ms="6940" started-at="2017-01-01T22:09:55Z" finished-at="2017-01-01T22:10:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test_SetDates -->

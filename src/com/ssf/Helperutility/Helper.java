@@ -27,7 +27,7 @@ public class Helper {
 				driver = new ChromeDriver();
 			}
 			else if(Inputs[1] == "IE"){
-				System.setProperty("webdriver.IE.driver","E:\\Workspace\\SeleniumScratch_Framework\\Drivers\\IEDriverServer.exe" );
+				System.setProperty("webdriver.ie.driver","E:\\Workspace\\SeleniumScratch_Framework\\Drivers\\IEDriverServer.exe" );
 				driver = new InternetExplorerDriver();
 			}			
 			else{

@@ -17,7 +17,7 @@ public class Selenium_TestData_Files {
 		String[] Credentials = {"Administrator", "12iso*help"};
 		//String URL = "https://15.213.117.249/";
 		String URL = "https://www.redbus.in/";
-		String Browser = "firefox";
+		String Browser = "chrome";
 		String[] testdata = new String[4];
 		
 		

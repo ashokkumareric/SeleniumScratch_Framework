@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -109,6 +110,7 @@ public class Booking_page extends BaseClass{
 		int move_value = 0;
 		for (Months month : Months.values()){
 //			System.out.println("Month 1 in the list: " + month);
+//			System.out.println("Curr_Month: " + Curr_Month );
 			if ( ((Curr_Month).toLowerCase()).equals(month.toString().toLowerCase())){
 //				System.out.println("Month and Month value: " + month +month.value );
 				Current_Month_value = month.value; 
@@ -116,6 +118,7 @@ public class Booking_page extends BaseClass{
 		}
 		for (Months month : Months.values()){
 //			System.out.println("Month 2 in the list: " + month);
+//			System.out.println("Input_Month: " + Inp_Month );
 			if ( ((Inp_Month).toLowerCase()).equals(month.toString().toLowerCase())){
 //				System.out.println("Month and Month value: " + month +month.value );
 				Input_Month_value = month.value; 
@@ -124,10 +127,14 @@ public class Booking_page extends BaseClass{
 //		System.out.println("Input_Month_Value: " + Input_Month_value);
 //		System.out.println("Current_Month_Value: " + Current_Month_value);
 		move_value = get_month_value(Current_Month_value,Input_Month_value);
-		return 0;
+		return move_value;
 		
 	}
 	
+	/*
+	 * This function gives the number of clicks to be performed to be clicked 
+	 * for navigating to the required year based on the Input provided
+	 */
 	
 	private int get_year(String Curr_year, String Inp_year){
 		int Current_Month_value = 0;
@@ -138,16 +145,27 @@ public class Booking_page extends BaseClass{
 		return 0;
 		
 	}
+	
+	/*
+	 * This function moves the Calender to the respective 
+	 * Month and year based on the Input provided.
+	 * 
+	 */
+	
+	
 	public void setdata_from_date(){
 		
 		
 		String[] date_month_year = testdata.from_date.split("-"); // Input data from Testdata file
 		String Inp_date = date_month_year[0];
-		String Inp_month = date_month_year[2];
+		String Inp_month = date_month_year[1];
 		String Inp_year = date_month_year[2];
 		wait = new WebDriverWait(driver, 50);
+		String Browser = (testdata.getdata_redbus())[1];
 		WebElement Datetoolbar = bpl.from_setmonth;
 		WebElement Datebar_nxtbtn = bpl.from_datenext_btn;
+		WebElement from_setdatebox = bpl.from_setdate_box;
+		Actions act_chrome = new Actions(this.driver);
 		String[] get_month_year; // Data from UI
 		String Curr_month = null;
 		String Curr_year = null;
@@ -155,17 +173,27 @@ public class Booking_page extends BaseClass{
 		int move_value_month = 0;
 		int move_value_year = 0;
 		
-		bpl.from_setdate_box.click();
+		if (Browser.equals("chrome")){
+			
+			act_chrome.moveToElement(from_setdatebox).click().perform();
+			
+		}
+		if (Browser.equals("firefox")){
+			from_setdatebox.click();
+		}
+		
 		try{
 		
 			wait.until(ExpectedConditions.visibilityOf(Datetoolbar));
 			get_month_year = (Datetoolbar.getText()).split(" ");
 			Curr_month = get_month_year[0];
+//			System.out.println("reached.........This year");
 //			Call get_year function for moving the years using the next button from GUI
-			move_value_month = this.get_year(Curr_year,Inp_year);
+			move_value_year = this.get_year(Curr_year,Inp_year);
 			
 //			Call get_month function for moving the Months using the next button from GUI
 			move_value_month = this.get_month(Curr_month,Inp_month);
+			System.out.println("more value month: " + move_value_month);
 
 		}catch(Exception e){
 			System.out.println("Datetool bar not found. Try to increase the time");
