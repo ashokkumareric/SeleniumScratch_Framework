@@ -42,14 +42,14 @@ public class BookingPage_Locators {
 	@FindBy(how = How.XPATH, using = ".//*[@id='rb-calendar_onward_cal']/table/tbody/tr[1]/td[3]/button")
 	public WebElement from_datenext_btn;
 	
-	@FindBy(how = How.XPATH, using = ".//*[@id='rb-calendar_onward_cal']/table/tbody/tr[3]/td[5]")
-	public WebElement from_Jun2;
-	
 	@FindBy(how = How.XPATH, using = ".//input[@id='return_cal']")
-	public WebElement return_setdata_box;
+	public WebElement return_setdate_box;
 		
 	@FindBy(how = How.XPATH, using = ".//*[@id='rb-calendar_return_cal']/table/tbody/tr[1]/td[2]")
 	public WebElement return_setmonth;
+	
+	@FindBy(how = How.XPATH, using = ".//*[@id='rb-calendar_return_cal']/table/tbody/tr[1]/td[3]/button")
+	public WebElement return_datenext_btn;
 	
 	@FindBy(how = How.CSS, using = "div > button[id='search_btn']")
 	public WebElement search_btn;

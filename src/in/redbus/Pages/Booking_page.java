@@ -279,14 +279,58 @@ public class Booking_page extends BaseClass{
 		}
 		
 		for (int i = 1; i <= move_value; i++){
-			wait.until(ExpectedConditions.visibilityOf(bpl.from_datenext_btn));
+			wait.until(ExpectedConditions.visibilityOf(Datebar_nxtbtn));
 			Datebar_nxtbtn.click();
 		}		
 		
 	}
 	
 	public void setdata_to_date(){
+		String[] date_month_year = testdata.to_date.split("-"); // Input data from Testdata file
+		String Inp_date = date_month_year[0];
+		String Inp_month = date_month_year[1];
+		String Inp_year = date_month_year[2];
+		wait = new WebDriverWait(driver, 50);
+		String Browser = (testdata.getdata_redbus())[1];
+		WebElement Datetoolbar = bpl.return_setmonth;
+		WebElement Datebar_nxtbtn = bpl.return_datenext_btn;
+		WebElement from_setdatebox = bpl.return_setdate_box;
+		Actions act_chrome = new Actions(this.driver);
+		String[] get_month_year; // Data from UI
+		String Curr_month = null;
+		String Curr_year = null;
+		int move_value = 0;
 		
+		
+		if (Browser.equals("chrome")){
+			
+			act_chrome.moveToElement(from_setdatebox).click().perform();
+			
+		}
+		if (Browser.equals("firefox")){
+			from_setdatebox.click();
+		}
+		
+		try{
+		
+			wait.until(ExpectedConditions.visibilityOf(Datetoolbar));
+			get_month_year = (Datetoolbar.getText()).split(" ");
+			Curr_month = get_month_year[0];
+			Curr_year = get_month_year[1];
+//			System.out.println("reached.........This year");
+//			Call get_year function for moving the years using the next button from GUI
+			move_value = this.get_year(Curr_year, Inp_year, Curr_month, Inp_month);
+			System.out.println("more value : " + move_value);
+
+		}catch(Exception e){
+			e.printStackTrace();
+			System.out.println(Thread.currentThread().getStackTrace()[2].getLineNumber());
+		}
+		
+		for (int i = 1; i <= move_value; i++){
+			wait.until(ExpectedConditions.visibilityOf(Datebar_nxtbtn));
+			Datebar_nxtbtn.click();
+		}		
 		
 	}
 	
